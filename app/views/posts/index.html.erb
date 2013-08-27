@@ -1,0 +1,11 @@
+<h1>Posts</h1>
+<% if @posts.count > 0 %>
+	<% @posts.each do |post| %>
+		<blockquote>
+			<p>Body: <%= post.body %></p>
+			<small>Email:<%= post.email %></small>
+		</blockquote>
+	<% end %>
+<% else %>
+	<p><em>There aren't any posts.</em></p>
+<% end %>
