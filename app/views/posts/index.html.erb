@@ -2,6 +2,7 @@
 <% if @posts.count > 0 %>
 	<% @posts.each do |post| %>
 		<blockquote>
+			<p>Post: <%= post.id %></p>
 			<p>Body: <%= post.body %></p>
 			<small>Email:<%= post.email %></small>
 			<p>Attachment Data: <%= post.attachment %></p>
