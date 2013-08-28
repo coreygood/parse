@@ -2,6 +2,7 @@ Parse::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   match '/parse', to: 'posts#index'
+  match '/calls', to: 'posts#calls'
   post '/email_processor' => 'griddler/emails#create'
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
